@@ -2,22 +2,14 @@ public class Employee {
 
     private int empId;
     private String empName;
-    private String empEmail;
     private double empSalary;
-    private String empDepartment;
+    private String skill;
 
-    public Employee(int empId, String empName, String empEmail, double empSalary, String empDepartment) {
+    public Employee(int empId, String empName, double empSalary, String skill) {
         this.empId = empId;
         this.empName = empName;
-        this.empEmail = empEmail;
         this.empSalary = empSalary;
-        this.empDepartment = empDepartment;
-    }
-
-    @Override
-    public String toString() {
-        return empId + ", " + empName + ", " + empEmail + ", " + empSalary + ", " + empDepartment;
-
+        this.skill = skill;
     }
 
     public int getEmpId() {
@@ -36,14 +28,6 @@ public class Employee {
         this.empName = empName;
     }
 
-    public String getEmpEmail() {
-        return empEmail;
-    }
-
-    public void setEmpEmail(String empEmail) {
-        this.empEmail = empEmail;
-    }
-
     public double getEmpSalary() {
         return empSalary;
     }
@@ -52,11 +36,21 @@ public class Employee {
         this.empSalary = empSalary;
     }
 
-    public String getEmpDepartment() {
-        return empDepartment;
+    public String getSkill() {
+        return skill;
     }
 
-    public void setEmpDepartment(String empDepartment) {
-        this.empDepartment = empDepartment;
+    public void setSkill(String skill) {
+        this.skill = skill;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "empId=" + empId +
+                ", empName='" + empName + '\'' +
+                ", empSalary=" + empSalary +
+                ", skill='" + skill + '\'' +
+                '}';
     }
 }

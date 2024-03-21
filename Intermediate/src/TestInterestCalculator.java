@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class TestInterestCalculator {
 
 
-    public static void main(String[] args) {
+    public void testCal() {
         try {
             InterestCalcImpl ob = new InterestCalcImpl();
             Scanner sc = new Scanner(System.in);
