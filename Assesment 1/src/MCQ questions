@@ -1,0 +1,10 @@
+1. d)JVM
+2. c)15Hello Hello510
+3. a)Define immutable data classes with concise syntax
+4. d) Improve performance of object creation
+5. c) Support for pattern matching
+6. d) Automatic memory management
+7.  c) Overloading is static binding, overriding is dynamic binding.
+8.  b) Private
+9.  b) Call the orElse() method with a default value as an argument.
+10. c) No, Java only allows single inheritance.

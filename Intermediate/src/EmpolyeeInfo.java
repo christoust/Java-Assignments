@@ -3,12 +3,12 @@ import java.util.*;
 public class EmpolyeeInfo {
     public static void main(String[] args) {
         List<Employee> employees = new ArrayList<>();
-        employees.add(new Employee(4, "Blesson", 50000.0, "HR"));
-        employees.add(new Employee(1, "Annu",  60000.0, "Development"));
-        employees.add(new Employee(2, "Anjana",  70000.0, "Sales"));
-        employees.add(new Employee(5, "Greeshma",  70000.0, "Marketing"));
-        employees.add(new Employee(3, "Christo",  70000.0, "Marketing"));
-        employees.add(new Employee(2, "Anjana", 70000.0, "Marketing"));
+        employees.add(new Employee(4, "Blesson", 50000.0,"java", "HR",30,2));
+        employees.add(new Employee(1, "Annu",  60000.0, "java","Development",22,3));
+        employees.add(new Employee(2, "Anjana",  70000.0,"python", "Sales",23,4));
+//        employees.add(new Employee(5, "Greeshma",  70000.0,,"sql", "Marketing"));
+//        employees.add(new Employee(3, "Christo",  70000.0, "Marketing"));
+//        employees.add(new Employee(2, "Anjana", 70000.0, "Marketing"));
 
 
         Set<Integer> employeeIDs = new HashSet<>();
