@@ -19,10 +19,10 @@ public interface IAddressBook {
     abstract boolean addAddress(final Address address) throws DuplicateAddressException;
 
     /**
-     * @param firstName
+     * @param flatId
      * @return boolean true/false
      */
-    abstract boolean removeAddress(final String firstName) throws NoEntriesException, NoEntryException;
+    abstract boolean removeAddress(final String flatId) throws NoEntriesException, NoEntryException;
 
     public default Set<Address> getAllAddressEntries() throws NoEntriesException {
         return null;

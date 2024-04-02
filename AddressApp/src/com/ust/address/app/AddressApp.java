@@ -2,6 +2,7 @@ package com.ust.address.app;
 
 import com.ust.address.exceptions.DuplicateAddressException;
 import com.ust.address.exceptions.NoEntriesException;
+import com.ust.address.exceptions.NoEntryException;
 import com.ust.address.model.Address;
 import com.ust.address.service.AddressBookImpl;
 
@@ -9,6 +10,9 @@ import java.util.Iterator;
 import java.util.Scanner;
 import java.util.Set;
 
+/**
+ * AddressApp class
+ */
 public class AddressApp {
 
     public void testAddressApp() throws DuplicateAddressException, NoEntriesException {
@@ -48,6 +52,11 @@ public class AddressApp {
                         }
                         break;
                     }
+                    case 3: {
+                        System.out.println("Enter flatId to remove");
+                        String flatId = sc.next();
+                        addressBook.removeAddress(flatId);
+                    }
                     case 0: {
                         System.out.println("Exiting program...");
                     }
@@ -57,10 +66,11 @@ public class AddressApp {
                     }
                 }
             } while (option != 0);
-        }catch (DuplicateAddressException e)
+        }catch (DuplicateAddressException | NoEntryException e)
         {
             System.out.println(e.getMessage());
         }
+
     }
 
 
