@@ -1,0 +1,42 @@
+[
+  {
+    "empId": "245",
+    "name": "Blesson John",
+    "age": 27,
+    "email": "blesson@gmail.com",
+    "role": "developer",
+    "location": "Trivandrum"
+  },
+  {
+    "empId": "246",
+    "name": "Christo Shaji",
+    "age": 24,
+    "email": "chris@gmail.com",
+    "role": "developer",
+    "location": "Trivandrum"
+  },
+  {
+    "empId": "247",
+    "name": "Annu Mathew",
+    "age": 24,
+    "email": "annu@gmail.com",
+    "role": "Analyst",
+    "location": "Kochi"
+  },
+  {
+    "empId": "248",
+    "name": "Greeshma Girija",
+    "age": 25,
+    "email": "gireesh@gmail.com",
+    "role": "tester",
+    "location": "Banglore"
+  },
+  {
+    "empId": "250",
+    "name": "Anjana Subash",
+    "age": 22,
+    "email": "anjana@gmail.com",
+    "role": "BA",
+    "location": "Kayamkulam"
+  }
+]
